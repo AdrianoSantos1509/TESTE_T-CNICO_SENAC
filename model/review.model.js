@@ -34,12 +34,12 @@ const Review = sequelize.define('Review', {
     movie_id: {
         type: DataTypes.INTEGER,
         allowNull: false
-    }
+    },
 
 }, {
     tableName: 'reviews',
     timestamps: true,
-    underscored: true
+    
 });
 
 Review.associate = (models) => {

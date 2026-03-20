@@ -25,7 +25,7 @@ async function startServer() {
 
         // Sincroniza os Models com o Banco
         // { alter: true } ajusta as tabelas sem deletar os dados existentes
-        await sequelize.sync({ alter: false }); 
+        await sequelize.sync({ alter: true }); 
         console.log('Modelos sincronizados com o banco.');
 
         const PORT = process.env.PORT || 3000;

@@ -36,8 +36,7 @@ const User = sequelize.define('User', {
     }
 }, {
     tableName: 'users',
-    timestamps: true,   // Cria created_at e updated_at
-    underscored: true   // Mantém o padrão snake_case no MySQL
+    timestamps: true,   // Cria created_at e updated_at  
 });
 
 // Espaço para associações (caso precise ligar com posts ou outras tabelas)

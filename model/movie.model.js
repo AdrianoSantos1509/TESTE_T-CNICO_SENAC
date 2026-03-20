@@ -43,7 +43,7 @@ const Movie = sequelize.define('Movie', {
 }, {
     tableName: 'movies',
     timestamps: true,
-    underscored: true
+   
 });
 
 Movie.associate = (models) => {
